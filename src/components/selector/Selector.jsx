@@ -7,7 +7,16 @@ import bodyImg from "../../assets/icon-body.png";
 import auraImg from "../../assets/icon-lightn.png";
 
 const Selector = ({ ...props }) => {
-  const [auraState, setAuraState] = useState("#ffffff");
+  console.log({ ...props });
+  //   const [customColors, setCustomColors] = useState({
+  //     aura: "#32a852",
+  //     antenna: "#32a852",
+  //     hair: "#32a852",
+  //     face: "#32a852",
+  //     body: "#32a852",
+  //     hex: "ffffff",
+  //   });
+  //   const [auraState, setAuraState] = useState("#ffffff");
 
   //   const [aura, setAura] = useState("#32a852");
   //   console.log(aura, setAura);
@@ -33,9 +42,9 @@ const Selector = ({ ...props }) => {
                   type="color"
                   id="aura"
                   name="aura"
-                  value={auraState}
+                  value={props.aura}
                   className="selector-input"
-                  onChange={(e) => setAuraState(e.target.value)}
+                  //   onChange={(e) => props.setAura(e.target.value)}
                 />
                 <label for="aura" className="selector-label">
                   Aura
@@ -53,6 +62,7 @@ const Selector = ({ ...props }) => {
                   id="ant"
                   name="ant"
                   className="selector-input"
+                  value={props.hex}
                 />
                 <label for="ant" className="selector-label">
                   Antenna

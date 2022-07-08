@@ -5,8 +5,6 @@ import Alien from "../alien/Alien";
 import { OrbitControls } from "@react-three/drei";
 
 const CanvasJsx = ({ ...props }) => {
-  const [auraState, setAuraState] = useState("#ffffff");
-
   // console.log({ ...props });
 
   return (
@@ -21,15 +19,7 @@ const CanvasJsx = ({ ...props }) => {
           castShadow
         />
         <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-        <Alien
-          customColors={{
-            aura: props.customColors.aura,
-            antenna: props.customColors.antenna,
-            hair: props.customColors.hair,
-            face: props.customColors.face,
-            body: props.customColors.body,
-          }}
-        />
+        <Alien setAura={props.setAura} aura={props.aura} hex={props.hex} />
       </Suspense>
     </Canvas>
   );
