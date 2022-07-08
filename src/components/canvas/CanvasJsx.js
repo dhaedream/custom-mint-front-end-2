@@ -17,7 +17,15 @@ const CanvasJsx = () => {
           castShadow
         />
         <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-        <Alien />
+        <Alien
+          customColors={{
+            aura: "blue",
+            antenna: "red",
+            hair: "black",
+            face: "green",
+            body: "red",
+          }}
+        />
       </Suspense>
     </Canvas>
   );

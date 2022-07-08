@@ -16,99 +16,98 @@ const Alien = ({ ...props }) => {
         <mesh
           geometry={nodes.Object_5.geometry}
           material={materials.material_9}
-          material-color={"red"}
+          material-color={props.customColors.aura}
         />
         <mesh
           geometry={nodes.Object_7.geometry}
           material={materials.material_8}
-          material-color={"red"}
+          material-color={props.customColors.aura}
         />
         {/* aura  */}
         <mesh
           geometry={nodes.Object_9.geometry}
           material={materials.material_7}
-          material-color={"red"}
+          material-color={props.customColors.aura}
         />
         {/* body/arms  */}
         <mesh
           geometry={nodes.Object_11.geometry}
           material={materials.material_6}
-          material-color={"white"}
+          material-color={props.customColors.body}
         />
         {/* body  */}
         <mesh
           geometry={nodes.Object_12.geometry}
           material={materials.material_6}
-          material-color={"white"}
+          material-color={props.customColors.body}
         />
         {/* eyes  */}
         <mesh
           geometry={nodes.Object_14.geometry}
           material={materials.material_5}
-          material-color={"black"}
+          material-color={"grey"}
         />
         {/* hair  */}
         <mesh
           geometry={nodes.Object_16.geometry}
           material={materials.material_4}
-          material-color={"white"}
+          material-color={props.customColors.hair}
         />
         {/* hair  */}
         <mesh
           geometry={nodes.Object_17.geometry}
           material={materials.material_4}
-          material-color={"green"}
+          material-color={props.customColors.hair}
         />
         <mesh
           geometry={nodes.Object_18.geometry}
           material={materials.material_4}
-          material-color={"white"}
+          material-color={props.customColors.hair}
         />
         <mesh
           geometry={nodes.Object_19.geometry}
           material={materials.material_4}
-          material-color={"white"}
+          material-color={props.customColors.hair}
         />
         <mesh
           geometry={nodes.Object_20.geometry}
           material={materials.material_4}
-          material-color={"white"}
+          material-color={props.customColors.hair}
         />
         {/* antenna tips  */}
         <mesh
           geometry={nodes.Object_22.geometry}
           material={materials.material_3}
-          material-color={"white"}
+          material-color={props.customColors.antenna}
         />
         {/* idk  */}
         <mesh
           geometry={nodes.Object_24.geometry}
           material={materials.material_2}
-          material-color={"green"}
         />
         {/* antenna sticks  */}
         <mesh
           geometry={nodes.Object_26.geometry}
           material={materials.material_1}
-          material-color={"white"}
+          material-color={props.customColors.antenna}
         />
         {/* face */}
         <mesh
           geometry={nodes.Object_28.geometry}
           material={materials.material_0}
-          material-color={"white"}
+          material-color={props.customColors.face}
         />
         {/* face  */}
         <mesh
           geometry={nodes.Object_29.geometry}
           material={materials.material_0}
-          material-color={"white"}
+          material-color={props.customColors.face}
         />
         {/* face */}
         <mesh
           geometry={nodes.Object_30.geometry}
           material={materials.material_0}
-          material-color={"white"}
+          material-color={props.customColors.face}
         />
       </group>
     </group>
