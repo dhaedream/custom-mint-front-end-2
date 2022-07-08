@@ -2,6 +2,7 @@ import React from "react";
 import { Suspense, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Alien from "../alien/Alien";
+import { OrbitControls } from "@react-three/drei";
 
 const CanvasJsx = () => {
   return (
@@ -15,6 +16,7 @@ const CanvasJsx = () => {
           position={[10, 15, 10]}
           castShadow
         />
+        <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
         <Alien />
       </Suspense>
     </Canvas>
