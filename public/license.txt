@@ -1,0 +1,11 @@
+Model Information:
+* title:	cute alien
+* source:	https://sketchfab.com/3d-models/cute-alien-68d4df606f73431db8b443e9ee138558
+* author:	ZhangWanqing (https://sketchfab.com/ZhangWanqing)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "cute alien" (https://sketchfab.com/3d-models/cute-alien-68d4df606f73431db8b443e9ee138558) by ZhangWanqing (https://sketchfab.com/ZhangWanqing) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
