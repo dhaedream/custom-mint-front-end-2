@@ -8,6 +8,13 @@ const CanvasJsx = () => {
     <Canvas>
       <Suspense fallback={null}>
         <ambientLight />
+        <spotLight
+          intensity={0.9}
+          angle={0.1}
+          penumbra={1}
+          position={[10, 15, 10]}
+          castShadow
+        />
         <Alien />
       </Suspense>
     </Canvas>

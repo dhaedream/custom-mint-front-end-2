@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Mint Custom NFT</h1>
+      <h1>CUSTOMIZE NFT</h1>
       <div className="mint-container">
         <div className="mint-canvas-card">
           <div className="mint-canvas-wrapper">
