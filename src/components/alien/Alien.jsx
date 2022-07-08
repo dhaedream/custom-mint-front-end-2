@@ -6,7 +6,7 @@ const Alien = ({ ...props }) => {
   const group = useRef();
   const { nodes, materials } = useGLTF("/scene.gltf");
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} scale={2}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           geometry={nodes.Object_3.geometry}
