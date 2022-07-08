@@ -5,6 +5,8 @@ import Alien from "../alien/Alien";
 import { OrbitControls } from "@react-three/drei";
 
 const CanvasJsx = ({ ...props }) => {
+  const [auraState, setAuraState] = useState("#ffffff");
+
   // console.log({ ...props });
 
   return (

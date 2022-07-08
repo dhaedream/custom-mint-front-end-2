@@ -7,6 +7,8 @@ import bodyImg from "../../assets/icon-body.png";
 import auraImg from "../../assets/icon-lightn.png";
 
 const Selector = ({ ...props }) => {
+  const [auraState, setAuraState] = useState("#ffffff");
+
   //   const [aura, setAura] = useState("#32a852");
   //   console.log(aura, setAura);
   // const setAura;
@@ -31,10 +33,9 @@ const Selector = ({ ...props }) => {
                   type="color"
                   id="aura"
                   name="aura"
-                  value={props.customColors.hex}
+                  value={auraState}
                   className="selector-input"
-
-                  //   onChange={(e) => setAura(e.target.value)}
+                  onChange={(e) => setAuraState(e.target.value)}
                 />
                 <label for="aura" className="selector-label">
                   Aura

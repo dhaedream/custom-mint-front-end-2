@@ -5,9 +5,16 @@ import Navbar from "./components/navbar/Navbar";
 import Selector from "./components/selector/Selector";
 
 function App() {
-  // const [aura, setAura] = useState("#ffffff");
+  const [customColors, setCustomColors] = useState({
+    aura: "#32a852",
+    antenna: "#32a852",
+    hair: "#32a852",
+    face: "#32a852",
+    body: "#32a852",
+    hex: "ffffff",
+  });
   // console.log({ ...props });
-  // const aura = "blue"
+  // const auraState = "#32a852";
   return (
     <div className="App">
       <Navbar />
@@ -16,17 +23,18 @@ function App() {
         <div className="mint-canvas-card">
           <div className="mint-canvas-wrapper">
             <CanvasJsx
-              customColors={{
-                aura: "blue",
-                antenna: "red",
-                hair: "black",
-                face: "green",
-                body: "red",
-                hex: "ffffff",
-              }}
+              // customColors={{
+              // aura: auraState,
+              // antenna: "white",
+              // hair: "black",
+              // face: "white",
+              // body: "black",
+              // hex: "ffffff",
+              // }}
+              customColors={customColors}
             />
           </div>
-          <Selector customColors={{}} />
+          <Selector />
         </div>
       </div>
     </div>
