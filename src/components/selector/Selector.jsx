@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./selector.css";
-import antenna from "../../assets/icon-ant.png";
-import eyes from "../../assets/icon-eye.png";
-import face from "../../assets/icon-face.png";
-import body from "../../assets/icon-body.png";
-import aura from "../../assets/icon-lightn.png";
+import antennaImg from "../../assets/icon-ant.png";
+import eyesImg from "../../assets/icon-eye.png";
+import faceImg from "../../assets/icon-face.png";
+import bodyImg from "../../assets/icon-body.png";
+import auraImg from "../../assets/icon-lightn.png";
 
-const Selector = () => {
+const Selector = ({ ...props }) => {
+  //   const [aura, setAura] = useState("#32a852");
+  //   console.log(aura, setAura);
+  // const setAura;
+  // const [antenna, setAntenna ] = useState('#ffffff')
+  // const [hair, setHair ] = useState('#ffffff')
+  // const [face, setFacea ] = useState('#ffffff')
+  // const [body, setBody ] = useState('#ffffff')
   return (
     <div className="selector">
       <h2>Customize:</h2>
@@ -15,12 +22,19 @@ const Selector = () => {
           <div className="selector-object">
             <div className="selector-custom-container">
               <div className="selector-custom-wrap">
-                <img className="selector-img-icon" src={aura} alt="aura-icon" />
+                <img
+                  className="selector-img-icon"
+                  src={auraImg}
+                  alt="aura-icon"
+                />
                 <input
                   type="color"
                   id="aura"
                   name="aura"
+                  value={props.customColors.hex}
                   className="selector-input"
+
+                  //   onChange={(e) => setAura(e.target.value)}
                 />
                 <label for="aura" className="selector-label">
                   Aura
@@ -29,7 +43,7 @@ const Selector = () => {
               <div className="selector-custom-wrap">
                 <img
                   className="selector-img-icon"
-                  src={antenna}
+                  src={antennaImg}
                   alt="ant-icon"
                 />
 
@@ -44,19 +58,27 @@ const Selector = () => {
                 </label>
               </div>
               <div className="selector-custom-wrap">
-                <img className="selector-img-icon" src={eyes} alt="eyes-icon" />
+                <img
+                  className="selector-img-icon"
+                  src={eyesImg}
+                  alt="eyes-icon"
+                />
                 <input
                   type="color"
-                  id="eyes"
-                  name="eyes"
+                  id="hair"
+                  name="hair"
                   className="selector-input"
                 />
-                <label for="eyes" className="selector-label">
-                  Eyes
+                <label for="hair" className="selector-label">
+                  Hair
                 </label>
               </div>
               <div className="selector-custom-wrap">
-                <img className="selector-img-icon" src={face} alt="face-icon" />
+                <img
+                  className="selector-img-icon"
+                  src={faceImg}
+                  alt="face-icon"
+                />
                 <input
                   type="color"
                   id="face"
@@ -68,7 +90,11 @@ const Selector = () => {
                 </label>
               </div>
               <div className="selector-custom-wrap">
-                <img className="selector-img-icon" src={body} alt="body-icon" />
+                <img
+                  className="selector-img-icon"
+                  src={bodyImg}
+                  alt="body-icon"
+                />
                 <input
                   type="color"
                   id="body"

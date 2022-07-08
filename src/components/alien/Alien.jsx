@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 const Alien = ({ ...props }) => {
+  //   console.log({ ...props });
   const group = useRef();
   const { nodes, materials } = useGLTF("/scene.gltf");
   return (

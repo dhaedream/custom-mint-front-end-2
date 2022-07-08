@@ -4,7 +4,9 @@ import { Canvas } from "@react-three/fiber";
 import Alien from "../alien/Alien";
 import { OrbitControls } from "@react-three/drei";
 
-const CanvasJsx = () => {
+const CanvasJsx = ({ ...props }) => {
+  // console.log({ ...props });
+
   return (
     <Canvas>
       <Suspense fallback={null}>
@@ -19,11 +21,11 @@ const CanvasJsx = () => {
         <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
         <Alien
           customColors={{
-            aura: "blue",
-            antenna: "red",
-            hair: "black",
-            face: "green",
-            body: "red",
+            aura: props.customColors.aura,
+            antenna: props.customColors.antenna,
+            hair: props.customColors.hair,
+            face: props.customColors.face,
+            body: props.customColors.body,
           }}
         />
       </Suspense>
