@@ -35,7 +35,7 @@ function App() {
               // hex: "ffffff",
               // }}
               // customColors={customColors}
-              setAura={setAura}
+              // setAura={setAura}
               aura={aura}
               hex={hex}
             />

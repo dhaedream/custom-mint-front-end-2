@@ -44,7 +44,7 @@ const Selector = ({ ...props }) => {
                   name="aura"
                   value={props.aura}
                   className="selector-input"
-                  //   onChange={(e) => props.setAura(e.target.value)}
+                  onChange={(e) => props.setAura(e.target.value)}
                 />
                 <label for="aura" className="selector-label">
                   Aura
