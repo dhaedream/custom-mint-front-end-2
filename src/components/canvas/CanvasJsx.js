@@ -5,8 +5,7 @@ import Alien from "../alien/Alien";
 import { OrbitControls } from "@react-three/drei";
 
 const CanvasJsx = ({ ...props }) => {
-  // console.log({ ...props });
-
+  console.log(props.aura);
   return (
     <Canvas>
       <Suspense fallback={null}>
@@ -19,7 +18,7 @@ const CanvasJsx = ({ ...props }) => {
           castShadow
         />
         <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-        <Alien setAura={props.setAura} aura={props.aura} hex={props.hex} />
+        <Alien auraColor={props.aura} hex={props.hex} />
       </Suspense>
     </Canvas>
   );

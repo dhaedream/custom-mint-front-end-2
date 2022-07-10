@@ -7,24 +7,9 @@ import bodyImg from "../../assets/icon-body.png";
 import auraImg from "../../assets/icon-lightn.png";
 
 const Selector = ({ ...props }) => {
-  console.log({ ...props });
-  //   const [customColors, setCustomColors] = useState({
-  //     aura: "#32a852",
-  //     antenna: "#32a852",
-  //     hair: "#32a852",
-  //     face: "#32a852",
-  //     body: "#32a852",
-  //     hex: "ffffff",
-  //   });
-  //   const [auraState, setAuraState] = useState("#ffffff");
+  //   console.log({ ...props.customColor.aura });
+  //   console.log({ ...props.customColor });
 
-  //   const [aura, setAura] = useState("#32a852");
-  //   console.log(aura, setAura);
-  // const setAura;
-  // const [antenna, setAntenna ] = useState('#ffffff')
-  // const [hair, setHair ] = useState('#ffffff')
-  // const [face, setFacea ] = useState('#ffffff')
-  // const [body, setBody ] = useState('#ffffff')
   return (
     <div className="selector">
       <h2>Customize:</h2>
@@ -42,11 +27,15 @@ const Selector = ({ ...props }) => {
                   type="color"
                   id="aura"
                   name="aura"
-                  value={props.aura}
+                  defaultValue={props.aura}
                   className="selector-input"
-                  onChange={(e) => props.setAura(e.target.value)}
+                  onChange={(e) => props.setAuraColor(e.target.value)}
+                  //   onChange={(e) => props.setCustomColors}
                 />
-                <label for="aura" className="selector-label">
+                <label
+                  for="aura"
+                  className="selector-label.aura(e.target.value)"
+                >
                   Aura
                 </label>
               </div>
@@ -59,12 +48,13 @@ const Selector = ({ ...props }) => {
 
                 <input
                   type="color"
-                  id="ant"
-                  name="ant"
+                  id="antenna"
+                  name="antenna"
                   className="selector-input"
-                  value={props.hex}
+                  //   value={props.antenna}
+                  //   onChange={(e) => props.setAntenna(e.target.value)}
                 />
-                <label for="ant" className="selector-label">
+                <label for="antenna" className="selector-label">
                   Antenna
                 </label>
               </div>
@@ -79,6 +69,7 @@ const Selector = ({ ...props }) => {
                   id="hair"
                   name="hair"
                   className="selector-input"
+                  value={props.hex}
                 />
                 <label for="hair" className="selector-label">
                   Hair
@@ -118,10 +109,6 @@ const Selector = ({ ...props }) => {
               </div>
             </div>
           </div>
-          {/* <div className="selector-custom-wrap">
-            <label for="face">Face</label>
-            <input type="color" id="face" name="face" />
-          </div> */}
         </div>
       </div>
     </div>
