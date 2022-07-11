@@ -3,21 +3,23 @@
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
+  color: black;
   background: rgb(63, 94, 251);
   background: linear-gradient(
     265deg,
     rgba(0, 225, 255, 0.2) 0%,
     rgba(255, 0, 191, 0.2) 100%
   );
-  padding: 1vh 1vh;
+  margin: 2vh 0;
 }
 .navbar__logo-container {
   height: 75px;
   width: 75px;
+  padding: 10px;
 }
 .navbar__logo {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
 }
 .navbar__links-container {
   display: flex;
@@ -25,7 +27,7 @@
   justify-content: flex-end;
 }
 .navbar__links-item {
-  color: lightgrey;
+  /* color: lightgrey; */
   padding: 0 2vw;
   text-decoration: none;
   font-size: 1.2rem;
@@ -34,7 +36,7 @@
   margin-right: 2vw;
   padding: 0.7rem 0.7rem;
   background: rgba(255, 255, 255, 0.2);
-  color: lightgrey;
+  color: gray;
   font-size: 1.2rem;
   font-weight: 500;
   /* color: #7778; */

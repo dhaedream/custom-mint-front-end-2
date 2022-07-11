@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  color: #2d3436;
+
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,20 +14,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.mint-header {
+  padding-left: 2rem;
+  color: #2d3436;
+}
 .mint-container {
-  border: 3px solid rgb(67, 67, 67);
+  /* border: 3px solid rgb(222, 222, 222); */
   height: 80vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 4vh 0;
 }
 .mint-canvas-card {
   border: 3px solid rgb(67, 67, 67);
-
   height: 100%;
-  width: 85vw;
   border-radius: 25px;
   padding: 1vh;
   background: rgb(63, 94, 251);
@@ -48,17 +54,14 @@ code {
 /* medium screen */
 @media screen and (max-width: 992px) {
   .mint-container {
-    min-height: 75vh;
-    align-items: center;
-    justify-content: center;
+    height: 85vh;
+    width: 100%;
   }
   .mint-canvas-card {
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 95%;
     height: 82vh;
-    margin: auto 0;
-    align-items: space-between;
   }
   .mint-canvas-wrapper {
     height: 48vh;
@@ -70,13 +73,17 @@ code {
 @media (max-width: 575.98px) {
   .mint-container {
     min-height: 85vh;
+    width: 100vw;
   }
   .mint-canvas-card {
-    width: 92vw;
-    height: 85vh;
+    width: 94%;
+    height: 88vh;
+    padding: 2vh 0;
+    margin: 1vh 0;
   }
   .mint-canvas-wrapper {
     height: 50vh;
     width: 85vw;
+    padding: 0;
   }
 }
