@@ -10,9 +10,14 @@ const Navbar = () => {
       </div>
       <div className="navbar__links-container">
         <div>
-          <div to="/" className="navbar__links-item">
+          <a
+            className="navbar__links-item"
+            href="https://custom-mint-front-end-2.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Home
-          </div>
+          </a>
         </div>
         <div>
           <div to="/mint" className="navbar__links-item">
@@ -20,9 +25,14 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <div to="/community" className="navbar__links-item">
+          <a
+            className="navbar__links-item"
+            href="https://custom-mint-front-end-2.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Community
-          </div>
+          </a>
         </div>
         <button className="navbar__button">Connect</button>
       </div>

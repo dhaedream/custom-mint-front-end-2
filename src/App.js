@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import CanvasJsx from "./components/canvas/CanvasJsx";
 import Navbar from "./components/navbar/Navbar";
 import Selector from "./components/selector/Selector";
+import Footer from "./components/footer/Footer";
 
 function App() {
   // const [customColors, setCustomColors] = useState({
@@ -54,6 +55,7 @@ function App() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
