@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <a
             className="footer__links-item"
-            href="https://custom-mint-front-end-2.vercel.app/"
+            href="https://custom-mint-front-end-dom-git-master-paintincode.vercel.app/"
             rel="noreferrer"
           >
             Home
@@ -22,7 +22,7 @@ const Footer = () => {
         <div>
           <a
             className="footer__links-item"
-            href="https://custom-mint-front-end-2.vercel.app/"
+            href="https://custom-mint-front-end-dom-git-master-paintincode.vercel.app/"
             rel="noreferrer"
           >
             Community
