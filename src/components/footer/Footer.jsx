@@ -22,7 +22,7 @@ const Footer = () => {
         <div>
           <a
             className="footer__links-item"
-            href="https://custom-mint-front-end-dom-git-master-paintincode.vercel.app/"
+            href="https://custom-mint-front-end-dom-git-master-paintincode.vercel.app/community"
             rel="noreferrer"
           >
             Community
