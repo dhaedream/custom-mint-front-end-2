@@ -35,14 +35,13 @@
 .navbar__button {
   margin-right: 2vw;
   padding: 0.7rem 0.7rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   color: gray;
   font-size: 1.2rem;
   font-weight: 500;
-  /* color: #7778; */
   border: none;
   outline: none;
-  border-radius: 3px;
+  border-radius: 23px;
 }
 .navbar__hamb_container {
   height: 75px;

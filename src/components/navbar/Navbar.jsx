@@ -13,7 +13,6 @@ const Navbar = () => {
           <a
             className="navbar__links-item"
             href="https://custom-mint-front-end-2.vercel.app/"
-            target="_blank"
             rel="noreferrer"
           >
             Home
@@ -28,7 +27,6 @@ const Navbar = () => {
           <a
             className="navbar__links-item"
             href="https://custom-mint-front-end-2.vercel.app/"
-            target="_blank"
             rel="noreferrer"
           >
             Community

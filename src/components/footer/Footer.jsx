@@ -6,17 +6,25 @@ const Footer = () => {
     <div className="footer-container gradient-container">
       <div className="footer-links-container gradient">
         <div>
-          <a className="footer__links-item" href="https://google.com">
+          <a
+            className="footer__links-item"
+            href="https://custom-mint-front-end-2.vercel.app/"
+            rel="noreferrer"
+          >
             Home
           </a>
         </div>
         <div>
-          <a className="footer__links-item" href="https://google.com">
+          <a className="footer__links-item" href="/">
             Mint
           </a>
         </div>
         <div>
-          <a className="footer__links-item" href="https://google.com">
+          <a
+            className="footer__links-item"
+            href="https://custom-mint-front-end-2.vercel.app/"
+            rel="noreferrer"
+          >
             Community
           </a>
         </div>

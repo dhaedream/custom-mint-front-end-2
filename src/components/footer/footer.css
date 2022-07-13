@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 .footer__links-item {
-  color: lightgrey;
+  color: black;
   /* padding: 0 2vw; */
   /* padding: 2vh 0; */
   line-height: 2em;
@@ -25,13 +25,13 @@
 .footer__button {
   margin-right: 2vw;
   padding: 0.7rem 0.7rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: lightgrey;
+  background: rgba(0, 0, 0, 0.2);
+  color: gray;
   font-size: 1.2rem;
   font-weight: 500;
   border: none;
   outline: none;
-  border-radius: 3px;
+  border-radius: 23px;
 }
 /* medium screen */
 @media screen and (max-width: 992px) {
